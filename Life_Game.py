@@ -69,7 +69,6 @@ while True:
     
     #Registramos las acciones del usuario, ej. teclado, mouse
     for event in events:
-        print(pygame.mouse.get_pos())
         if event.type == pygame.KEYDOWN:
             pauseExect = not pauseExect
 
@@ -175,17 +174,16 @@ while True:
         if 70 > posX > 20 and 775 > posY > 725:
             draw_rect(light, (20,725,50,50))
         else:
-            draw_rect((200,200,200), (20,725,50,50))
-            
+            draw_rect((200,200,200), (20,725,50,50))                        
         if 320 > posX > 270 and 775 > posY > 725: 
-            draw_rect(light, (269,724,52,52))
+            draw_rect(light, (269,724,52,52))            
         else:
-            draw_rect(light, (270,725,50,50))
-
+            draw_rect(light, (270,725,50,50))           
         if 530 > posX > 480 and 775 > posY > 725:
             draw_rect(light, (479,724,52,52))
         else:
             draw_rect(light, (480,725,50,50))
+            
         
         render_text(spd, red, (535,740))
 
@@ -202,7 +200,7 @@ while True:
             draw_rect((0,0,0), (20,725,50,50))
         else:
             draw_rect(dark, (20,725,50,50))
-        
+
         if 320 > posX > 270 and 775 > posY > 725: 
             draw_rect(dark, (269,724,52,52))
         else:
